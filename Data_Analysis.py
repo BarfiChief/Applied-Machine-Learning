@@ -11,7 +11,7 @@ def plot_data(t,x_value,y_value,z_value,y_label,title):
     plt.title(title)
     plt.show();
 activities=["climbingdown","climbingup","jumping","lying","running","sitting","standing","walking"]
-for sub in range(1,4):
+for sub in range(1,6):
     for act in activities:
         file_acc="./Raw_Sensor_Data"+"/Subject_"+str(sub)+"/Accelerometer"+"/acc_"+act+"_thigh.csv"
         data=pd.read_csv(file_acc,index_col=0)
