@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 def plot_data(t,x_value,y_value,z_value,y_label,title):
