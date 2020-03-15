@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 thigh_data=pd.DataFrame()
 window=100
 last=0
