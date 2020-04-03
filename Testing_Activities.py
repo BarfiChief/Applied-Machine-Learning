@@ -43,7 +43,7 @@ Y_final=total_data.Activity[temp]
 # Loading previously saved Logistic Regression model
 pkl="Logistic_Regression_Model.pkl"
 classifier=pickle.load(open(pkl,'rb'))
-# Making predictions for last two unseen subjects
+#Making predictions for last two unseen subjects
 Y_predicted=classifier.predict(X_final)
 print(f'Testing F1 score is: {f1_score(Y_final,Y_predicted,average="macro"):.3f}')
 print(f'Testing accuracy is: {accuracy_score(Y_final,Y_predicted):.3f}')
