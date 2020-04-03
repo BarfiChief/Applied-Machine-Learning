@@ -72,7 +72,7 @@ implement_model(classifier_2,title='K Nearest Neighbors')
 classifier_3=svm.SVC(kernel='poly',gamma='scale',C=1.0)
 implement_model(classifier_3,title='SVM Classifier')
 
-# Fitting Logistic Regression model to all 4 subjects for final testing on 2 unseen subjects
+#Fitting Logistic Regression model to all 4 subjects for final testing on 2 unseen subjects
 mask=total_data.Subject<=4
 X_final=total_data[columns][mask]
 Y_final=total_data.Activity[mask]
