@@ -82,6 +82,6 @@ Y_predicted=classifier.predict(X_final)
 print(f'Training F1 score is: {f1_score(Y_final,Y_predicted,average="macro"):.3f}')
 print(f'Training accuracy is: {accuracy_score(Y_final,Y_predicted):.3f}')
 # Saving model for later use
-pkl_file="SVM_Model.pkl"
+pkl_file="Logistic_Regression_Model.pkl"
 with open(pkl_file,'wb') as file:
     pickle.dump(classifier,file) 
